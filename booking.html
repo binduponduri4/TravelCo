@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - TravelCo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TravelCo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Trip</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="tajmahal">Taj Mahal, Agra</option>
+                        <option value="jaipur">Jaipur, Rajasthan</option>
+                        <option value="goa">Goa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Travel Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TravelCo. All rights reserved.</p>
+    </footer> 
+
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            alert('Thank you for booking with TravelCo! We will get back to you soon.');
+            this.submit(); 
+        });
+    </script>
+</body>
+</html>
