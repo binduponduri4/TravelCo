@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TravelCo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to TravelCo</h1>
+            <p>Your gateway to amazing travel experiences.</p>
+        </section>
+
+        <section class="destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-list">
+                <div class="destination-item" data-place="Taj Mahal">
+                    <img src="images/tajmahal.jpeg" alt="Taj Mahal, Agra">
+                    <h3>Taj Mahal, Agra</h3>
+                    <p>The city of love and lights.</p>
+                </div>
+                <div class="destination-item" data-place="Jaipur">
+                    <img src="images/jaipur.webp" alt="Jaipur, Rajasthan">
+                    <h3>Jaipur, Rajasthan</h3>
+                    <p>The land of the rising sun.</p>
+                </div>
+                <div class="destination-item" data-place="Goa">
+                    <img src="images/goa.jpeg" alt="Goa">
+                    <h3>Goa</h3>
+                    <p>The city that never sleeps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-info" id="destinationInfo">
+            <h2 id="infoTitle"></h2>
+            <p id="infoContent"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TravelCo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
